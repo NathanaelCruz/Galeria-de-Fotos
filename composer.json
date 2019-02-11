@@ -1,0 +1,21 @@
+{
+
+    "name": "PhotoGallery/Nathanael",
+    "authors": [
+        {
+            "name": "Nathanael Cruz Alves",
+            "email": "nathanael.cruz.fd@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PhotoGallery\\": "vendor\\photogallery\\php-classes\\src\\"
+        }
+    },
+    "require": {
+        "slim/slim": "2.0",
+        "rain/raintpl": "3.0",
+        "phpmailer/phpmailer": "6.0"
+    }
+
+}

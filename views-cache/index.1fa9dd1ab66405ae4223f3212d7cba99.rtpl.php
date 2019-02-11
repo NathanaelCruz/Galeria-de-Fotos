@@ -1,0 +1,37 @@
+<?php if(!class_exists('Rain\Tpl')){exit;}?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Área do Administrador</title>
+    <link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="res/css/style.css">
+    <script src="res/js/jquery-3.3.1.min.js"></script>
+    <script src="res/js/jquery.validate.js" type="text/javascript"></script>
+    <script src="res/js/JqueryValidatorFieldLogin.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container-fluid" id="center-list-login">
+        <?php if( $status!=NULL ){ ?>
+            <div class="alert alert-danger" id="menssage-danger" role="alert">
+                Usuário inexistente ou senha inválida.
+            </div>
+        <?php } ?>
+        <h1>Galeria de Fotos</h1>
+        <form action="/photogallery/admin" onSubmit="return validar(this);" name="frm-login" id="frm-login" method="POST">
+            <div class="form-group">
+                <label for="deslogin">Login</label>
+                <input type="deslogin" class="form-control" id="deslogin" name="deslogin" aria-describedby="desloginHelp" placeholder="Digite seu login">
+            </div>
+            <div class="form-group">
+                <label for="despassword">Senha</label>
+                <input type="password" class="form-control" id="despassword" name="despassword" aria-describedby="despasswordHelp" placeholder="Digite sua senha">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            
+            <p><a href="/photogallery">Voltar</a></p>
+        </form>
+    </div>
+</body>
+</html> 

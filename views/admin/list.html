@@ -1,0 +1,46 @@
+<div class="container-fluid" id="center-list">
+    {if="$total>0"}
+        {$countPhotos = 1}
+        {loop="$photos"}
+            {$countPhotos += 1}
+            <div {if="$countPhotos%2==0"}class="photo-item-transparent"{else}class="photo-item-gray"{/if}>
+                <div class="photo-gallery">
+                    <img src="/photogallery/res/images/gallery/{$value.desphoto}" alt="{$value.title}">
+                </div>
+                <div class="title-photo">
+                    <p class="title">{$value.title}</p>
+                    <p class="leg-photo">{$value.legphoto}</p>
+                </div>
+                <div class="buttons-conjuct">
+                    <p><a class="btn btn-primary btn-xs" href="/photogallery/admin/alterar/{$value.idphoto}"><i class="fa fa-edit"></i> Alterar</a> <a class="btn btn-danger btn-xs" href="/photogallery/admin/excluir/{$value.idphoto}" onclick="return confirm('Deseja realmente excluir esse registro?')"><i class="fa fa-trash"></i> Excluir</a></p>
+                </div>
+            </div>
+        {/loop}
+        
+        <div id="pagination">
+            <nav aria-label="Navegação da galeria">
+                <ul class="pagination">
+                    <li class="page-item" aria-label="Anterior">
+                        <a class="page-link" href="/photogallery/admin/fotos?page={$anterior}">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                    </li>
+                    {loop="$pages"}
+                    <li class="page-item"><a class="page-link" href="{$value.link}">{$value.page}</a></li>
+                    {/loop}
+                    <li class="page-item" aria-label="Próximo">
+                        <a class="page-link" href="/photogallery/admin/fotos?page={$proximo}">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    {else}
+        <div class="alert alert-info" role="alert" id="no-info">
+            Não temos nenhum conteúdo para essa áre no momento. ;)
+        </div>
+    {/if}
+</div>

@@ -1,0 +1,506 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+#top-header,
+#bottom-footer
+{
+    background-color: rgb(23, 23, 79);
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#top-header
+{
+    margin-bottom: 20px;
+}
+
+#top-header-site
+{
+    background-color: transparent;
+}
+
+#top-header-site h1
+{
+    color: rgb(123, 123, 123);
+    font-size: 60px;
+    text-align: center;
+}
+
+#top-header-site #menu-header
+{
+    border-top: 2px rgb(200, 200, 200) solid;
+    border-bottom: 2px rgb(200, 200, 200) solid;
+    margin: 50px auto 15px auto;
+}
+
+#top-header-site #menu-header #menu-site
+{
+    margin: 10px auto;
+    width: 400px;
+    overflow: hidden;
+}
+
+#top-header-site #menu-header #menu-site li a,
+#bottom-footer-site p,
+#about h1,
+#about #text-about h3,
+#about #text-about p,
+#gallery h1,
+#contact h1,
+#frm-login p a
+{
+    color: rgb(100, 100, 100);
+}
+
+#bottom-footer
+{
+    margin-top: 20px;
+}
+
+#bottom-footer-site
+{
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#bottom-footer-site p
+{
+    text-align: center;
+}
+
+#top-header ul li a,
+#bottom-footer ul li a
+{
+    color: rgb(210, 210, 210);    
+}
+
+#top-header ul li a:hover,
+#bottom-footer ul li a:hover
+{
+    color: rgb(23, 23, 79);    
+}
+
+#frm-gallery-save,
+#frm-gallery-update,
+#frm-contact,
+#frm-login
+{
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#frm-login p
+{
+    margin-top: 20px;
+}
+
+#image-exemplo
+{
+    margin: 20px 0 20px 0;
+    width: 80%;
+    overflow: hidden;
+}
+
+#image-select
+{
+    width: 80%;
+}
+
+#center-list
+{
+    min-height: 680px;
+}
+
+#center-list-site
+{
+    min-height: 540px;
+}
+
+#center-list .photo-item-transparent,
+#center-list .photo-item-gray
+{
+    height: 100px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#center-list-site #carouselSlide div div div h3 a,
+#frm-login p a
+{
+    text-decoration: none;
+}
+
+.image-carousel
+{
+    width: 50%;
+    height: 380px;
+}
+
+#center-list .photo-item-transparent .photo-gallery,
+#center-list .photo-item-transparent .title-photo,
+#center-list .photo-item-transparent .buttons-conjuct,
+#center-list .photo-item-gray .photo-gallery,
+#center-list .photo-item-gray .title-photo,
+#center-list .photo-item-gray .buttons-conjuct
+{
+    height: 100%;
+    float: left;
+}
+
+#center-list .photo-item-transparent .photo-gallery,
+#center-list .photo-item-gray .photo-gallery
+{
+    width: 10%;
+}
+
+#center-list .photo-item-transparent .photo-gallery img,
+#center-list .photo-item-gray .photo-gallery img
+{
+    height: 100%;
+    width: 100%;
+}
+
+#center-list .photo-item-transparent .title-photo,
+#center-list .photo-item-gray .title-photo
+{
+    width: 74%;
+}
+
+#center-list .photo-item-transparent .title-photo p,
+#center-list .photo-item-gray .title-photo p
+{
+    margin-left: 20px;
+}
+
+#center-list .photo-item-transparent .title-photo .title,
+#center-list .photo-item-gray .title-photo .title
+{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#center-list .photo-item-transparent .buttons-conjuct,
+#center-list .photo-item-gray .buttons-conjuct
+{
+    width: 15%;
+}
+
+#center-list .photo-item-transparent .buttons-conjuct p,
+#center-list .photo-item-gray .buttons-conjuct p
+{
+    margin-top: 20px;
+}
+
+#center-list-login
+{
+    background-color: rgb(225, 225, 225);
+    width: 450px;
+    padding: 30px 20px;
+    margin: 10% auto;
+}
+
+#center-list-login h1,
+#top-header h1,
+#top-header-site h1,
+#about h1,
+#gallery h1,
+#contact h1
+{
+    font-family: 'Lobster', cursive;
+}
+
+#center-list-login h1
+{
+    margin: 15px 0;
+    text-align: center;
+}
+
+#center-list-login #frm-gallery-save,
+#center-list-login #frm-gallery-update,
+#center-list-login #frm-login
+{
+    width: auto;
+}
+
+#about,
+#gallery,
+#contact
+{
+    margin: 0 auto;
+}
+
+#about,
+#contact
+{
+    width: 60%;
+}
+
+#about h1,
+#gallery h1,
+#contact h1
+{
+    font-size: 55px;
+    text-align: center;
+    border-bottom: 1px rgb(168, 168, 168) solid;
+    padding-bottom: 4px;
+}
+
+#about #text-about,
+#about #img-about
+{
+    float: left;
+    display: block;
+}
+
+#about #text-about
+{
+    width: 55%;
+    padding: 10px;
+}
+
+#about #text-about p
+{
+    text-align: justify;
+}
+
+#about #text-about .subtitle
+{
+    font-weight: bold;
+}
+
+#about #img-about
+{
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+}
+
+#about #img-about img
+{
+    width: 100%;
+    height: auto;
+}
+
+#center-list-site-gallery
+{
+    min-height: 500px;
+}
+
+#gallery
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+}
+
+#content-gallery
+{
+    margin-top: 50px;
+}
+
+.image-light
+{
+    width: 100%;
+    display: block;
+}
+
+.image-light a img
+{
+    width: 25%;
+    float: left;
+    height: 250px;
+}
+
+#pagination
+{
+    margin: 0 auto;
+}
+
+#pagination nav{
+    text-align: center;
+}
+
+.photo-item-transparent
+{
+    background-color: rgb(250, 250, 250);
+}
+
+.photo-item-gray
+{
+    background-color: rgb(238, 238, 238);
+}
+
+#frm-login p a
+{
+    font-weight: bold;
+}
+
+#no-info
+{
+    background-color: rgb(226, 227, 229);
+    border-color: rgb(214, 216, 219);
+    text-align: center;
+    color: rgb(56, 61, 65);
+    padding: 30px 0;
+}
+
+.error
+{
+    font-weight: normal;
+    color: rgb(148, 28, 36);
+    width: 100%;
+    background-color: rgb(248, 215, 218);
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.valid
+{
+    color: rgb(21, 87, 36);    
+    background-color: rgb(212, 237, 218); 
+}
+
+#menssage-danger
+{
+    text-align: center;
+}
+
+@media (max-width: 1000px)
+{
+    .image-light a img
+    {
+        width: 25%;
+        float: left;
+        height: 200px;
+    }
+
+    #about #img-about
+    {
+        display: block;
+        width: 100%;
+    }
+    
+    #about #img-about
+    {
+        width: 45%;
+        height: 400px;
+    }
+
+    #center-list .photo-item-transparent,
+    #center-list .photo-item-gray
+    {
+        height: 80px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    #center-list .photo-item-transparent .title-photo .title,
+    #center-list .photo-item-gray .title-photo .title
+    {
+        font-size: 12px;
+    }
+
+    #center-list .photo-item-transparent .title-photo .leg-photo,
+    #center-list .photo-item-gray .title-photo .leg-photo
+    {
+        font-size: 10px;
+    }
+    
+    #center-list .photo-item-transparent .buttons-conjuct p,
+    #center-list .photo-item-gray .buttons-conjuct p
+    {
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 800px)
+{
+    .image-light a img
+    {
+        width: 25%;
+        float: left;
+        height: 150px;
+    }
+
+    #about #img-about
+    {
+        display: block;
+        width: 100%;
+    }
+    
+    #about #img-about
+    {
+        width: 45%;
+        height: 400px;
+    }
+
+    #center-list .photo-item-transparent,
+    #center-list .photo-item-gray
+    {
+        height: 60px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    #center-list .photo-item-transparent .title-photo .title,
+    #center-list .photo-item-gray .title-photo .title
+    {
+        font-size: 12px;
+    }
+
+    #center-list .photo-item-transparent .title-photo .leg-photo,
+    #center-list .photo-item-gray .title-photo .leg-photo
+    {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .image-light a img
+    {
+        width: 50%;
+        float: left;
+        height: 200px;
+    }
+
+    #about #img-about
+    {
+        display: block;
+        width: 100%;
+    }
+    
+    #about #img-about
+    {
+        width: 45%;
+        height: 400px;
+    }
+
+    #center-list .photo-item-transparent,
+    #center-list .photo-item-gray
+    {
+        height: 60px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    #center-list .photo-item-transparent .title-photo .title,
+    #center-list .photo-item-gray .title-photo .title
+    {
+        font-size: 12px;
+    }
+
+    #center-list .photo-item-transparent .title-photo .leg-photo,
+    #center-list .photo-item-gray .title-photo .leg-photo
+    {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,52 @@
+<div class="container-fluid" id="center-list-site-gallery">
+
+    <div id="gallery">
+        <h1>Galeria</h1>
+        <div id="content-gallery">
+
+            {if="$total>0"}
+            <div class="image-light">
+                {loop="$photos"}
+                <a href="res/images/gallery/{$value.desphoto}" title="{$value.title} - {$value.legphoto}"><img src="res/images/gallery/{$value.desphoto}" alt="Titulo"></a>
+                {/loop}
+            </div>
+            
+            <script>
+            
+                //new SimpleLightbox({elements: '.imageGallery1 a'});
+            
+                // or if using jQuery
+                $('#gallery #content-gallery .image-light a').simpleLightbox();
+            </script>
+            {else}
+                <div class="alert alert-info" role="alert" id="no-info">
+                    Não temos nenhum conteúdo para essa áre no momento. ;)
+                </div>
+            {/if}
+        </div>
+    </div>
+    
+    {if="$total>0"}
+    <div id="pagination">
+        <nav aria-label="Navegação da galeria">
+            <ul class="pagination">
+                <li class="page-item" aria-label="Anterior">
+                    <a class="page-link" href="/photogallery/galeria?page={$anterior}">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                </li>
+                {loop="$pages"}
+                <li class="page-item"><a class="page-link" href="{$value.link}">{$value.page}</a></li>
+                {/loop}
+                <li class="page-item" aria-label="Próximo">
+                    <a class="page-link" href="/photogallery/galeria?page={$proximo}">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    {/if}
+</div>
