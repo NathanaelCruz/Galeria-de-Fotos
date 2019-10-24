@@ -1,7 +1,8 @@
 # GALERIA DE FOTOS
 
-## Gerenciamento de Fotos
-
+![GitHub top language](https://img.shields.io/github/languages/top/NathanaelCruz/Galeria-de-Fotos)
+![GitHub repo size](https://img.shields.io/github/repo-size/NathanaelCruz/Galeria-de-Fotos)
+![GitHub](https://img.shields.io/github/license/NathanaelCruz/Galeria-de-Fotos)
 
 ### Tecnologias & Linguagens
 
