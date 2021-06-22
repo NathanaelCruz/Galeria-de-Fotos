@@ -15,7 +15,7 @@
     "require": {
         "slim/slim": "2.0",
         "rain/raintpl": "3.0",
-        "phpmailer/phpmailer": "6.0"
+        "phpmailer/phpmailer": "6.5.0"
     }
 
 }
